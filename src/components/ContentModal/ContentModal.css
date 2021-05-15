@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.ContentModal_landscape {
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.ContentModal_portrait {
+    display: none;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.tagline {
+    padding-bottom: 10px;
+    align-self: center;
+}
+
+.ContentModal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background-color: #212529;
+}
+
+.ContentModal::-webkit-scrollbar{
+    display: none;
+}
+
+.ContentModal_about {
+    padding: 10px;
+    width: 95%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    justify-content: space-evenly;
+    font-weight: 300;
+    text-align: justify;
+    
+    
+
+}
+
+.ContentModal_title{
+    height: 12%;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0 0 5px #495057;
+    text-align: justify;
+    background-color:#495057 ;
+    padding: 15px;
+    border-radius: 20px;
+   
+   
+}
+
+.ContentModal_description {
+    display: flex;
+    height: 40%;
+    overflow-y: scroll;
+    padding: 15px;
+    border-radius: 20px;
+    scrollbar-width: thin; 
+    box-shadow: inset 0 0 5px #495057;
+    text-align: justify;
+    background-color:#495057 ;
+
+
+    
+}
+
+.ContentModal_description::-webkit-scrollbar{
+    display: none;
+}
+
+@media (min-width:835px) {
+    .ContentModal_landscape{
+        display: none;
+    }
+    .ContentModal_portrait {
+        display: flex;
+        width: 38%;
+    }
+    .ContentModal {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px 0;
+    }
+    .ContentModal_about {
+        width: 58%;
+        padding: 0;
+        height: 100%;
+    }
+    .ContentModal_title {
+        font-size: 3.5vw;
+    }
+    .ContentModal_description {
+        font-size: 22px;
+        box-shadow: #000000;
+        border-radius: 30px;
+        
+        
+    }
+}

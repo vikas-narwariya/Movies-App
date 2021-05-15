@@ -1,0 +1,30 @@
+.header {
+    width: 100%;
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: #212529;
+    font-family:  "Roboso", sans-serif ;
+    font-size: 3vw;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 2px 2px 2px 2px #212529;
+    color: #e9ecef;
+    z-index: 100;
+    border-radius: 10px;
+    
+   
+
+}
+
+
+
+@media (max-width: 100px) {
+    .header {
+        padding-top: 15px;
+        font-size:  6.4vw;
+    }
+}
+

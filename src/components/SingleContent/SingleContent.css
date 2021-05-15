@@ -1,0 +1,44 @@
+.media {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #212529;
+    border-radius: 22px;
+    position: relative;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.media:hover {
+    background-color: #6c757d;
+    color: black;
+}
+
+@media (max-width: 550px) {
+    .media {
+        width: 46%;
+
+    }
+}
+
+.poster {
+    border-radius: 40px;
+    padding: 8px;
+
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    padding: 8px 0;
+}
+
+.subTitle {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3px;
+    padding: 0 2px;
+    
+}
